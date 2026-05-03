@@ -373,6 +373,29 @@ footer a:hover {
     padding: 45px 18px;
   }
 
+  .service-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  /* Make the contact form full width */
+  #contact form {
+    max-width: 100%;
+  }
+
+  /* Adjust grid columns for smaller screens */
+  #leadership ol, #programs ul, #join ol {
+    grid-template-columns: 1fr; /* Stack them in one single column */
+  }
+
+  /* Reduce h1 size further for very small phones */
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+
+
   header h1 {
     font-size: 1.9rem;
   }
@@ -401,8 +424,8 @@ span{
 
 
 #slideshow img {
-  max-width: 1000px;
-  max-height: max-content;
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
 }
 
